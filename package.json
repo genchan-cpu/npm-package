@@ -4,7 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "precreate-dir": "echo \"ディレクトリを作成します\"",
+    "create-dir": "mkdirp foo/bar",
+    "postcreate-dir": "echo \"ディレクトリを作成しました\"",
+    "remove-dir": "rimraf foo"
+  },
+  "bin": {
+    "greeting": "./greeting.js"
   },
   "author": "",
   "license": "ISC",
